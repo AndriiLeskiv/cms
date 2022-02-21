@@ -9,3 +9,4 @@ $news->display();
 
 $page = new models\Page();
 $page->display();
+
