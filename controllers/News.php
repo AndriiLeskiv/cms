@@ -2,9 +2,27 @@
 
 namespace controllers;
 
+/**
+ * Контролер для модуля News
+ * @package controllers
+*/
 class News
 {
-    public function display() {
-        echo 'News->display';
+    /**
+     * Відображення початкової сторінки модуля
+    */
+    public function actionIndex($id, $name): void
+    {
+        echo $id;
+        echo $name;
+        echo "actionIndex";
+    }
+
+    /**
+     * Відображення списку новин
+     */
+    public function actionList(): void
+    {
+        echo "actionList";
     }
 }
