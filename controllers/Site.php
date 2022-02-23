@@ -2,10 +2,14 @@
 
 namespace controllers;
 
+use JetBrains\PhpStorm\ArrayShape;
 class Site
 {
-    public function actionIndex(): void
+    #[ArrayShape(['Title' => "string", 'Content' => "string"])] public function actionIndex(): array
     {
-        echo "Site::actionIndex()";
+        return [
+            'Title' => 'Заголовок',
+            'Content' => 'Контент'
+        ];
     }
 }
